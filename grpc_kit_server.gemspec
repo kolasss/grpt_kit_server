@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["kolas"]
   spec.email = ["kolas.batman@gmail.com"]
 
-  spec.summary = "lalala"
-  spec.description = "lalala"
+  spec.summary = "Simple wrapper around gem grpc_kit"
+  spec.description = "Simple wrapper around gem grpc_kit, implements part of interface of gem grpc"
   spec.homepage = "https://example.com"
   spec.required_ruby_version = ">= 2.6.0"
 
@@ -31,7 +31,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  # spec.add_dependency "serverengine", "~> 2.3.1"
+  spec.add_dependency 'grpc_kit', '~> 0.5.1'
+  # spec.add_dependency 'async-io'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
